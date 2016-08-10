@@ -1,0 +1,16 @@
+INSTRUCTIONS TO BUILD AND RUN THE PROJECT
+
+1. Go to GitHub using account mettush using the URL https://github.com/mettusk.
+2. Download or clone the repository SEI from Github.
+3. If using Eclipse IDE import the project as Maven project.
+4. Create and set the run configuration for the project by mentioning name, location.
+5. You can provide the following goals to build and see the outcome.
+   a. To run the class which has main method
+      clean compile install exec:java -Dexec.mainClass="com.org.sei.controller.RemoveDuplicateController"
+   b. To run as a phase 
+      clean compile test
+6. The above step 5 can also be performed from command prompt to achieve the results.
+   a. To run the class which has main method
+      mvn clean compile install exec:java -Dexec.mainClass="com.org.sei.controller.RemoveDuplicateController"
+   b. To run as a phase 
+      mvn clean compile -Dmaven.test.skip=true test.
